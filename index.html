@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kittolabs</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ffffff, #ffffff);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+        }
+        h1 {
+            font-size: 4rem; /* Increased from 4rem to 4.8rem (20% larger) */
+            background: linear-gradient(45deg, #fc466b, #3f5efb, #fc466b);
+            background-size: 200% 200%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 30px;
+            animation: gradientCycle 5s ease infinite;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: linear-gradient(45deg, #fc466b, #3f5efb);
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            border-radius: 30px;
+            transition: transform 0.3s ease;
+        }
+        .btn:hover {
+            transform: scale(1.05);
+        }
+        /* Add to your CSS */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        h1, .btn {
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        /* Keyframes for cycling gradient animation */
+        @keyframes gradientCycle {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        /* Apply the animation to the text */
+        h1 {
+            font-size: 4.8rem; /* Increased from 4rem to 4.8rem (20% larger) */
+            background: linear-gradient(45deg, #fc466b, #3f5efb, #fc466b); /* Gradient colors */
+            background-size: 200% 200%; /* Makes the gradient larger for a smooth transition */
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 30px;
+            animation: gradientCycle 5s ease infinite; /* Animation applied to text */
+        }
+
+        .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: linear-gradient(45deg, #fc466b, #3f5efb);
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    transition: transform 0.3s ease, background 0.5s ease; /* Added background transition */
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    background: linear-gradient(45deg, #3f5efb, #fc466b); /* Reverse gradient on hover */
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>I like building things</h1>
+        <a href="https://github.com/umarmalik123" class="btn" target="_blank">
+            <i class="fab fa-github"></i> GitHub
+        </a>
+    </div>
+</body>
+</html>
